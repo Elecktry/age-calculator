@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.formularioCima{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contadorIdade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms{
+    position: absolute;
+}
+
+.labelStyle{
+    color: hsl(0, 1%, 44%);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom: 50px;
+    left: 38px;
+}
+
+.inputStyle{
+    color: #000000;
+    font-size: 32px;
+    padding: 5px;
+    width: 100px; 
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    
+}
+input:focus{
+   outline: 1px solid #854dff;
+}
+
+.inputStyle:nth-child(4){
+    position: relative;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.contadorIdade{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50pt;
+}
+span{
+    color: #854dff;
+}
+
+.attribution{
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
