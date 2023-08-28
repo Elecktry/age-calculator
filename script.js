@@ -2,34 +2,48 @@ function enviar() {
     dia = document.getElementById('Day').value
     mes = document.getElementById('Month').value
     ano = document.getElementById('Year').value
+   
+    const data = new Date()
 
-    const date = new Date()
+    let diaAtual = String(data.getDate()).padStart(2, '0') // 1 -> 01
 
-    year = date.getFullYear("yyyy")
-    anoAtual = year - ano
-    
-    mouth = date.getMonth("1-12")
-    if (mouth>mes){
-        mesAtual = mouth-mes
+    let mesAtual= String(data.getMonth() + 1).padStart(2, '0') // jan = 0, 3 -> 03
+
+    let anoAtual= data .getFullYear()//ano atual
+
+    if(dia<diaAtual){
+        diaAtual=diaAtual-dia
     }else{
-        mesAtual = mes - mouth
+        diaAtual=dia-diaAtual
     }
     
-    day = date.getDate("1-31")
-    diaAtual = day - dia
+    if(mes<mesAtual){
+        mesAtual=mesAtual-mes
+    }else{
+        mesAtual=mes-mesAtual
+    }
+
+    if(ano<anoAtual){
+        anoAtual=anoAtual-ano
+    }else{
+        anoAtual=ano-anoAtual
+    }
+    
+    if(mes=='12'){
+        anoAtual=anoAtual-1
+    }
+
+    console.log(diaAtual+'/'+mesAtual+'/'+anoAtual)
+
  
     spanAno = document.querySelector('#ano')
     spanAno.innerHTML = anoAtual
-    localStorage.setItem('years', anoAtual)
 
     spanMes = document.querySelector('#mes')
     spanMes.innerHTML = mesAtual
-    localStorage.setItem('mounth', mesAtual)
 
-    spaDia = document.querySelector('dia')
+    spaDia = document.querySelector('#dia')
     spaDia.innerHTML = diaAtual
-    localStorage.setItem('days', diaAtual)
-
 }
   
 
