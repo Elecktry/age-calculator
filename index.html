@@ -29,26 +29,31 @@
       <div class="formularioCima">
         <form class="forms" method="">
           <label class="labelStyle" for="Day">Day</label>
-          <input class="inputStyle" type="text" id="Day" maxlength="2" placeholder="DD" name="Day" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+          <input class="inputStyle" type="text" id="Day" maxlength="2" placeholder="DD" name="Day"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
           <label class="labelStyle" for="Month">Month</label>
-          <input class="inputStyle" type="text" id="Month" maxlength="2" placeholder="MM" name="Month" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-          <label class="labelStyle"  for="Year">Year</label>
-          <input class="inputStyle" type="text" id="Year" maxlength="4"  placeholder="YYYY" name="Month" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+          <input class="inputStyle" type="text" id="Month" maxlength="2" placeholder="MM" name="Month"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+          <label class="labelStyle" for="Year">Year</label>
+          <input class="inputStyle" type="text" id="Year" maxlength="4" placeholder="YYYY" name="Month"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
           <button class="btnSubmit inputStyle" id="btn" onclick="enviar()" type="button"></button>
         </form>
       </div>
       <div class="contadorIdade">
-        <p><span id="ano">--  </span> Years</p>
-        <p><span id="mes">--  </span> mounth</p>
-        <p><span id="dia">--  </span> days</p>
+        <p><span id="ano">-- </span> Years</p>
+        <p><span id="mes">-- </span> mounth</p>
+        <p><span id="dia">-- </span> days</p>
       </div>
 
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://github.com/Elecktry">Elecktry</a>.
-      </div> 
+      </div>
+    </div>
   </main>
 </body>
 
 <script src="script.js"></script>
+
 </html>
