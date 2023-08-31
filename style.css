@@ -78,8 +78,9 @@ span{
     border-radius: 100%;
     width:90px;
     height:90px;
-    color: white;
     background-color: #854dff;
+    background-image:url('./design/img-btn.svg');
     cursor:pointer;
     text-align: center;
 }
+             
